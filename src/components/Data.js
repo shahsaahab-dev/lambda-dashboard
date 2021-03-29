@@ -25,4 +25,21 @@ const Data = [
     }
 ]
 
-export default Data;
+
+const NavbarData = [
+    {
+        title: 'Listings',
+        id:'1',
+        path: '/',
+        cName: 'nav-text',
+        icon:'ListIcon',
+    },
+    {
+        title: 'Profile',
+        id:'2',
+        path: '/profile',
+        cName: 'nav-text'
+    },
+]
+
+export {Data,NavbarData}

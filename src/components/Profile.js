@@ -1,16 +1,11 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-const Profile = () => {
-        <Switch>
-        <Route path="/">
 
-        </Route>
-      </Switch>
+const Profile = () => {
+  return (
+    <>
+    <h1>Hello Profile Js</h1>
+    </>
+  )
 }
 
 export default Profile;

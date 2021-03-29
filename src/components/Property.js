@@ -1,6 +1,7 @@
 import React from 'react'
 import Rating from './Rating';
 import { LocationOn, SingleBed,Bathtub,FavoriteBorderOutlined as Heart,CallOutlined } from '@material-ui/icons';
+
 const Property = ({id,name,rating,imgUrl,location,bedrooms,baths}) => {
     return (
         <div className="property__single">
@@ -11,19 +12,10 @@ const Property = ({id,name,rating,imgUrl,location,bedrooms,baths}) => {
                 <div className="stars">
                     <Rating count={rating}/>
                 </div>
-            <p id="location">
-                <LocationOn/>
-                {location}
-            </p>
+            <p id="location"><LocationOn/>{location}</p>
             <ul id="features">
-                <li key={id}>
-                    <SingleBed/>
-                    {bedrooms}
-                </li>
-                    <li>
-                        <Bathtub/>
-                        {baths}
-                    </li>
+                <li key={id}><SingleBed/>{bedrooms}</li>
+                <li><Bathtub/>{baths}</li>
             </ul>
             </div>
             </div>
